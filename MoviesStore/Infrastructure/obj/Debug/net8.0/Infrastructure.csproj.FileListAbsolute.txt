@@ -10,3 +10,7 @@ C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\Infrastructure\obj\Deb
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\Infrastructure\obj\Debug\net8.0\refint\Infrastructure.dll
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\Infrastructure\obj\Debug\net8.0\Infrastructure.pdb
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\Infrastructure\obj\Debug\net8.0\ref\Infrastructure.dll
+C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\Infrastructure\bin\Debug\net8.0\DataAccess.dll
+C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\Infrastructure\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\Infrastructure\obj\Debug\net8.0\Infrastructure.csproj.AssemblyReference.cache
+C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\Infrastructure\obj\Debug\net8.0\Infrastr.15EFFBFE.Up2Date

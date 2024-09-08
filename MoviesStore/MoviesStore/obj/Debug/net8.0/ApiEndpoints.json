@@ -24,15 +24,5 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
-  },
-  {
-    "ContainingType": "MoviesStore.Controllers.MoviesController",
-    "Method": "GetMoviesDetails",
-    "RelativePath": "api/Movies/GetMoviesDetails",
-    "HttpMethod": "GET",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
   }
 ]

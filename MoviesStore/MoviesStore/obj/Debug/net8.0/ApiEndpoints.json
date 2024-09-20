@@ -17,6 +17,22 @@
   },
   {
     "ContainingType": "MoviesStore.Controllers.MoviesController",
+    "Method": "GetMovieDetails",
+    "RelativePath": "api/Movies/GetMovieDetails",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "movieId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoviesStore.Controllers.MoviesController",
     "Method": "GetMovies",
     "RelativePath": "api/Movies/GetMovies",
     "HttpMethod": "GET",

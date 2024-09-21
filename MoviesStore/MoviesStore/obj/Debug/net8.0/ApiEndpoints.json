@@ -50,5 +50,21 @@
     "Order": 0,
     "Parameters": [],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoviesStore.Controllers.MoviesController",
+    "Method": "InsertMovie",
+    "RelativePath": "api/Movies/InsertMovie",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "moviesInsertDTO",
+        "Type": "Infrastructure.DTO.MoviesInsertDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

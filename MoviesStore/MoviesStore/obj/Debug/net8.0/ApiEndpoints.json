@@ -66,5 +66,21 @@
       }
     ],
     "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoviesStore.Controllers.MoviesController",
+    "Method": "UpdateMovie",
+    "RelativePath": "api/Movies/UpdateMovie",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "moviesUpdateDTO",
+        "Type": "Infrastructure.DTO.MoviesUpdateDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
   }
 ]

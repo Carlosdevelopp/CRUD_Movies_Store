@@ -1,6 +1,22 @@
 [
   {
     "ContainingType": "MoviesStore.Controllers.MoviesController",
+    "Method": "DeleteMovie",
+    "RelativePath": "api/Movies/DeleteMovie",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "movieId",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "MoviesStore.Controllers.MoviesController",
     "Method": "GetMovie",
     "RelativePath": "api/Movies/GetMovie",
     "HttpMethod": "GET",

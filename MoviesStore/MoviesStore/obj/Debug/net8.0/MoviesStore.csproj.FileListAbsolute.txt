@@ -16,7 +16,6 @@ C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\MoviesStore.csproj.CoreCompileInputs.cache
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\MoviesStore.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\MoviesStore.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\MoviesStore.sourcelink.json
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\staticwebassets.build.json
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\staticwebassets.development.json
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\staticwebassets\msbuild.MoviesStore.Microsoft.AspNetCore.StaticWebAssets.props

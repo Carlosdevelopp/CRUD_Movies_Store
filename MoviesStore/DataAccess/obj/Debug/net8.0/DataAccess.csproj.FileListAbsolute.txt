@@ -1,6 +1,7 @@
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\bin\Debug\net8.0\DataAccess.dll
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
@@ -9,4 +10,3 @@ C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\obj\Debug\n
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\obj\Debug\net8.0\DataAccess.pdb
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll
-C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache

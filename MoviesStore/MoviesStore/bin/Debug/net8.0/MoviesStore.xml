@@ -6,23 +6,25 @@
     <members>
         <member name="M:MoviesStore.Controllers.MoviesController.GetMovie(System.Int32)">
              <summary>
-             Gets a movie by its ID
+             Get a movie by its ID
              </summary>
-             <param name="movieId">Númber of movie</param>
+             <param name="movieId">ID of movie</param>
              <returns>Object of movie</returns>
              <remarks>
              Sample request:
             
-                 GET /Todo
+                 GET / A Movie
                  {
-                    "id": 1,
-                    "name": "Item #1",
-                    "isComplete": true
+                     "tituloMovie": "string",
+                     "descriptionMovie": "string",
+                     "runningMovie": int,
+                     "releaseMovie": dataTime,
+                     "genreId": int,
+                     "awardId": int
                  }
-            
              </remarks>
-             <response code="200">Devuelve la el objeto</response>
-             <response code="400">Si el parámetro movieId no se encontró</response>
+             <response code="200">Successful operation and return movie object</response>
+             <response code="400">An error ocurred on the server</response>
         </member>
         <member name="M:MoviesStore.Controllers.MoviesController.GetMovies">
             <summary>
@@ -33,13 +35,26 @@
             <response code="400">Error</response>
         </member>
         <member name="M:MoviesStore.Controllers.MoviesController.GetMovieDetails(System.Int32)">
-            <summary>
-            Gets a movie by its ID
-            </summary>
-            <param name="movieId">Númber of movie</param>
-            <returns>Object of movie</returns>
-            <response code="200">Devuelve la el objeto</response>
-            <response code="400">Si el parámetro movieId no se encontró</response>
+             <summary>
+             Get a movie and details by its ID
+             </summary>
+             <param name="movieId">ID of movie</param>
+             <returns>Object of movie and details</returns>
+             <remarks>
+             Sample request:
+            
+                 GET / A Movie
+                 {
+                     "tituloMovie": "string",
+                     "descriptionMovie": "string",
+                     "runningMovie": int,
+                     "releaseMovie": dataTime,
+                     "genreId": int,
+                     "awardId": int
+                 }
+             </remarks>
+             <response code="200">Successful operation and return movie object</response>
+             <response code="400">An error ocurred on the server</response>
         </member>
         <member name="M:MoviesStore.Controllers.MoviesController.GetMoviesDetails">
             <summary>

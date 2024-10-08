@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MoviesStore</name>
+    </assembly>
+    <members>
+        <member name="M:MoviesStore.Controllers.MoviesController.GetMovie(System.Int32)">
+             <summary>
+             Get a movie by its ID
+             </summary>
+             <param name="movieId">ID of movie</param>
+             <returns>Object of movie</returns>
+             <remarks>
+             Request:
+            
+                 GET /api/Movies/GetMovie
+                 {
+                     "tituloMovie": "string",
+                     "descriptionMovie": "string",
+                     "runningMovie": int,
+                     "releaseMovie": dataTime,
+                     "genreId": int,
+                     "awardId": int
+                 }
+             </remarks>
+             <response code="201">Successful operation and return movie object</response>
+             <response code="400">Client error</response>
+        </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.GetMovies">
+            <summary>
+            Get a list all movies.
+            </summary>
+            <returns>A list objetos of movies.</returns>
+            <remarks>
+             Request:
+                
+                    GET /api/Movies/GetMovies
+                    {
+                       "titleMovie": "string",
+                       "descriptionMovie": "string",
+                       "runningMovie": int,
+                       "releaseMovie": "datatime",
+                       "genre": int,
+                       "award": int
+                    }
+            </remarks>
+            <response code="201">Operation successful.</response>
+            <response code="400">Client error.</response>
+        </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.GetMovieDetails(System.Int32)">
+             <summary>
+             Get a moviedetails by its ID
+             </summary>
+             <param name="movieId">ID of moviedetails</param>
+             <returns>Object of moviedetails</returns>
+             <remarks>
+             Request:
+            
+                 GET /api/Movies/GetMovieDetails
+                 {
+                     "tituloMovie": "string",
+                     "descriptionMovie": "string",
+                     "runningMovie": string,
+                     "releaseMovie": string,
+                     "genreId": string,
+                     "awardId": string
+                 }
+             </remarks>
+             <response code="201">Successful operation and return movieDetails object</response>
+             <response code="400">Client error</response>
+        </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.GetMoviesDetails">
+            <summary>
+            Get a list all moviesdetails.
+            </summary>
+            <returns>A list objects of movies.</returns>
+            <remarks>
+                Ejemplo de solicitud:
+                
+                    GET /api/Movies/GetMoviesDetails
+                    {
+                       "titleMovie": "string",
+                       "descriptionMovie": "string",
+                       "runningMovie": string,
+                       "releaseMovie": "string",
+                       "genre": string,
+                       "award": string
+                    }
+            </remarks>
+            <response code="201">Operation Successful and returns the list of moviesdetails.</response>
+            <response code="400">Client error.</response>
+        </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.InsertMovie(Infrastructure.DTO.MoviesInsertDTO)">
+             <summary>
+             Insert a movie into the database.
+             </summary>
+             <param name="moviesInsertDTO">Object to insert.</param>
+             <returns>Answer.</returns>
+             <remarks>
+             Request:
+            
+                 POST /api/Movies/InsertMovie
+                 {
+                     "titleMovie": "string",
+                     "descriptionMovie": "string",
+                     "releaseMovie": "datatime",
+                     "runningTimeMovie": int,
+                     "genreId": int,
+                     "awardId": int
+                 }
+            
+             </remarks>
+             <response code="201">Successful operation.</response>
+             <response code="400">Client error.</response>
+        </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.UpdateMovie(Infrastructure.DTO.MoviesUpdateDTO)">
+             <summary>
+             Update a movie into the data base.
+             </summary>
+             <param name="moviesUpdateDTO">Object movie to insert.</param>
+             <returns>Answer.</returns>
+             <remarks>
+             Request:
+            
+                 PUT /api/Movies/UpdateMovie
+                 {
+                     "movieId": int,
+                     "titleMovie": "string",
+                     "descriptionMovie": "string",
+                     "releaseMovie": "datatime",
+                     "runningTimeMovie": int,
+                     "genreId": int,
+                     "awardId": int
+                 }
+             </remarks>
+             <response code="200">Successful operation.</response>
+             <response code="400">Si hubo un error al insertar la película.</response>
+        </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.DeleteMovie(System.Int32)">
+             <summary>
+             Delete a movie by its ID.
+             </summary>
+             <param name="movieId">ID of the movie to be deleted.</param>
+             <returns>Answer.</returns>
+             <remarks>
+             Request:
+            
+                 DELETE /api/Movies/DeleteMovie
+                 {
+                     "movieId": int
+                 }
+             </remarks>
+             <response code="200">Successful operation.</response>
+             <response code="400">Client error.</response>
+        </member>
+    </members>
+</doc>

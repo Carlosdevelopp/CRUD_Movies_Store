@@ -113,6 +113,24 @@
              <response code="201">Successful operation.</response>
              <response code="400">Client error.</response>
         </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.InsertGenre(Infrastructure.DTO.GenresInsertDTO)">
+             <summary>
+             Insert a genre into the database.
+             </summary>
+             <param name="genresInsertDTO">Object to insert.</param>
+             <returns>Answer.</returns>
+             <remarks>
+             Request:
+            
+                 POST /api/Movies/InsertGenre
+                 {
+                     "genre": "string"
+                 }
+            
+             </remarks>
+             <response code="201">Successful operation.</response>
+             <response code="400">Client error.</response>
+        </member>
         <member name="M:MoviesStore.Controllers.MoviesController.UpdateMovie(Infrastructure.DTO.MoviesUpdateDTO)">
              <summary>
              Update a movie into the data base.

@@ -134,6 +134,35 @@
   },
   {
     "ContainingType": "MoviesStore.Controllers.MoviesController",
+    "Method": "InsertAward",
+    "RelativePath": "api/Movies/InsertAward",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "awardInsertDTO",
+        "Type": "Infrastructure.DTO.AwardsInsertDTO",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "MoviesStore.Controllers.MoviesController",
     "Method": "InsertGenre",
     "RelativePath": "api/Movies/InsertGenre",
     "HttpMethod": "POST",
@@ -141,8 +170,8 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "genreDTO",
-        "Type": "Infrastructure.DTO.GenresDTO",
+        "Name": "genresInsertDTO",
+        "Type": "Infrastructure.DTO.GenresInsertDTO",
         "IsRequired": true
       }
     ],

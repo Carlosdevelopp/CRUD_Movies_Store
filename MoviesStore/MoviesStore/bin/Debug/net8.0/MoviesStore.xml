@@ -131,6 +131,42 @@
              <response code="201">Successful operation.</response>
              <response code="400">Client error.</response>
         </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.InsertAward(Infrastructure.DTO.AwardsInsertDTO)">
+             <summary>
+             Insert a award into the database.
+             </summary>
+             <param name="awardInsertDTO">Object to insert.</param>
+             <returns>Answer.</returns>
+             <remarks>
+             Request:
+            
+                 POST /api/Movies/InsertAward
+                 {
+                     "award": "string"
+                 }
+            
+             </remarks>
+             <response code="201">Successful operation.</response>
+             <response code="400">Client error.</response>
+        </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.InsertActor(Infrastructure.DTO.ActorsInsertDTO)">
+             <summary>
+             Insert a award into the database.
+             </summary>
+             <param name="actorsInsertDTO">Object to insert.</param>
+             <returns>Answer.</returns>
+             <remarks>
+             Request:
+            
+                 POST /api/Movies/InsertActor
+                 {
+                     "fullName": "string"
+                 }
+            
+             </remarks>
+             <response code="201">Successful operation.</response>
+             <response code="400">Client error.</response>
+        </member>
         <member name="M:MoviesStore.Controllers.MoviesController.UpdateMovie(Infrastructure.DTO.MoviesUpdateDTO)">
              <summary>
              Update a movie into the data base.

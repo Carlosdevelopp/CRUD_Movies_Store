@@ -90,6 +90,23 @@
             <response code="201">Operation Successful and returns the list of moviesdetails.</response>
             <response code="400">Client error.</response>
         </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.GetAward(System.Int32)">
+            <summary>
+            Get a award by its ID.
+            </summary>
+            <returns>ID of Awards.</returns>
+            <remarks>
+                Ejemplo de solicitud:
+                
+                    GET /api/Movies/GetAward
+                    {
+                        "awardId": int,
+                        "awardTitle": "string"
+                    }
+            </remarks>
+            <response code="201">Operation Successful.</response>
+            <response code="400">Client error.</response>
+        </member>
         <member name="M:MoviesStore.Controllers.MoviesController.InsertMovie(Infrastructure.DTO.MoviesInsertDTO)">
              <summary>
              Insert a movie into the database.
@@ -142,7 +159,7 @@
             
                  POST /api/Movies/InsertAward
                  {
-                     "award": "string"
+                     "awardTitle": "string"
                  }
             
              </remarks>
@@ -151,7 +168,7 @@
         </member>
         <member name="M:MoviesStore.Controllers.MoviesController.InsertActor(Infrastructure.DTO.ActorsInsertDTO)">
              <summary>
-             Insert a award into the database.
+             Insert a actor into the database.
              </summary>
              <param name="actorsInsertDTO">Object to insert.</param>
              <returns>Answer.</returns>

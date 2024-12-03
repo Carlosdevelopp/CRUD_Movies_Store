@@ -1,0 +1,573 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "Mi API",
+    "description": "Una API de ejemplo con Swagger",
+    "termsOfService": "https://example.com/terms",
+    "contact": {
+      "name": "Ejemplo Contacto",
+      "url": "https://example.com/contact"
+    },
+    "license": {
+      "name": "Ejemplo Licencia",
+      "url": "https://example.com/license"
+    },
+    "version": "v1"
+  },
+  "paths": {
+    "/api/Movies/GetMovie": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Get a movie by its ID",
+        "description": "Request:\r\n            \r\n    GET /api/Movies/GetMovie\r\n    {\r\n        \"tituloMovie\": \"string\",\r\n        \"descriptionMovie\": \"string\",\r\n        \"runningMovie\": int,\r\n        \"releaseMovie\": dataTime,\r\n        \"genreId\": int,\r\n        \"awardId\": int\r\n    }",
+        "parameters": [
+          {
+            "name": "movieId",
+            "in": "query",
+            "description": "ID of movie",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful operation and return movie object"
+          },
+          "400": {
+            "description": "Client error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/GetMovies": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Get a list all movies.",
+        "description": "Request:\r\n   \r\n       GET /api/Movies/GetMovies\r\n       {\r\n          \"titleMovie\": \"string\",\r\n          \"descriptionMovie\": \"string\",\r\n          \"runningMovie\": int,\r\n          \"releaseMovie\": \"datatime\",\r\n          \"genre\": int,\r\n          \"award\": int\r\n       }",
+        "responses": {
+          "201": {
+            "description": "Operation successful."
+          },
+          "400": {
+            "description": "Client error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/GetMovieDetails": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Get a moviedetails by its ID",
+        "description": "Request:\r\n            \r\n    GET /api/Movies/GetMovieDetails\r\n    {\r\n        \"tituloMovie\": \"string\",\r\n        \"descriptionMovie\": \"string\",\r\n        \"runningMovie\": string,\r\n        \"releaseMovie\": string,\r\n        \"genreId\": string,\r\n        \"awardId\": string\r\n    }",
+        "parameters": [
+          {
+            "name": "movieId",
+            "in": "query",
+            "description": "ID of moviedetails",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Successful operation and return movieDetails object"
+          },
+          "400": {
+            "description": "Client error",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/GetMoviesDetails": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Get a list all moviesdetails.",
+        "description": "Ejemplo de solicitud:\r\n\r\n    GET /api/Movies/GetMoviesDetails\r\n    {\r\n       \"titleMovie\": \"string\",\r\n       \"descriptionMovie\": \"string\",\r\n       \"runningMovie\": string,\r\n       \"releaseMovie\": \"string\",\r\n       \"genre\": string,\r\n       \"award\": string\r\n    }",
+        "responses": {
+          "201": {
+            "description": "Operation Successful and returns the list of moviesdetails."
+          },
+          "400": {
+            "description": "Client error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/GetAward": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Get a award by its ID.",
+        "description": "Ejemplo de solicitud:\r\n\r\n    GET /api/Movies/GetAward\r\n    {\r\n        \"awardId\": int,\r\n        \"awardTitle\": \"string\"\r\n    }",
+        "parameters": [
+          {
+            "name": "awardId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operation Successful."
+          },
+          "400": {
+            "description": "Client error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/GetGenres": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/InsertMovie": {
+      "post": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Insert a movie into the database.",
+        "description": "Request:\r\n            \r\n    POST /api/Movies/InsertMovie\r\n    {\r\n        \"titleMovie\": \"string\",\r\n        \"descriptionMovie\": \"string\",\r\n        \"releaseMovie\": \"datatime\",\r\n        \"runningTimeMovie\": int,\r\n        \"genreId\": int,\r\n        \"awardId\": int\r\n    }",
+        "requestBody": {
+          "description": "Object to insert.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MoviesInsertDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MoviesInsertDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MoviesInsertDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful operation."
+          },
+          "400": {
+            "description": "Client error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/InsertGenre": {
+      "post": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Insert a genre into the database.",
+        "description": "Request:\r\n            \r\n    POST /api/Movies/InsertGenre\r\n    {\r\n        \"genre\": \"string\"\r\n    }",
+        "requestBody": {
+          "description": "Object to insert.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenresInsertDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenresInsertDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/GenresInsertDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful operation."
+          },
+          "400": {
+            "description": "Client error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/InsertAward": {
+      "post": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Insert a award into the database.",
+        "description": "Request:\r\n            \r\n    POST /api/Movies/InsertAward\r\n    {\r\n        \"awardTitle\": \"string\"\r\n    }",
+        "requestBody": {
+          "description": "Object to insert.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AwardsInsertDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/AwardsInsertDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/AwardsInsertDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful operation."
+          },
+          "400": {
+            "description": "Client error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/InsertActor": {
+      "post": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Insert a actor into the database.",
+        "description": "Request:\r\n            \r\n    POST /api/Movies/InsertActor\r\n    {\r\n        \"fullName\": \"string\"\r\n    }",
+        "requestBody": {
+          "description": "Object to insert.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActorsInsertDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActorsInsertDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/ActorsInsertDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "Successful operation."
+          },
+          "400": {
+            "description": "Client error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/UpdateMovie": {
+      "put": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Update a movie into the data base.",
+        "description": "Request:\r\n            \r\n    PUT /api/Movies/UpdateMovie\r\n    {\r\n        \"movieId\": int,\r\n        \"titleMovie\": \"string\",\r\n        \"descriptionMovie\": \"string\",\r\n        \"releaseMovie\": \"datatime\",\r\n        \"runningTimeMovie\": int,\r\n        \"genreId\": int,\r\n        \"awardId\": int\r\n    }",
+        "requestBody": {
+          "description": "Object movie to insert.",
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MoviesUpdateDTO"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/MoviesUpdateDTO"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/MoviesUpdateDTO"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Successful operation."
+          },
+          "400": {
+            "description": "Si hubo un error al insertar la película.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/DeleteMovie": {
+      "delete": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Delete a movie by its ID.",
+        "description": "Request:\r\n            \r\n    DELETE /api/Movies/DeleteMovie\r\n    {\r\n        \"movieId\": int\r\n    }",
+        "parameters": [
+          {
+            "name": "movieId",
+            "in": "query",
+            "description": "ID of the movie to be deleted.",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Successful operation."
+          },
+          "400": {
+            "description": "Client error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ActorsInsertDTO": {
+        "type": "object",
+        "properties": {
+          "fullName": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "AwardsInsertDTO": {
+        "type": "object",
+        "properties": {
+          "awardTitle": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "GenresInsertDTO": {
+        "type": "object",
+        "properties": {
+          "genre": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "MoviesInsertDTO": {
+        "type": "object",
+        "properties": {
+          "titleMovie": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionMovie": {
+            "type": "string",
+            "nullable": true
+          },
+          "releaseMovie": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "runningTimeMovie": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "genre": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "award": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "MoviesUpdateDTO": {
+        "type": "object",
+        "properties": {
+          "movieId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "titleMovie": {
+            "type": "string",
+            "nullable": true
+          },
+          "descriptionMovie": {
+            "type": "string",
+            "nullable": true
+          },
+          "releaseMovie": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "runningTimeMovie": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "genreId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "awardId": {
+            "type": "integer",
+            "format": "int32"
+          }
+        },
+        "additionalProperties": false
+      },
+      "ProblemDetails": {
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "nullable": true
+          },
+          "title": {
+            "type": "string",
+            "nullable": true
+          },
+          "status": {
+            "type": "integer",
+            "format": "int32",
+            "nullable": true
+          },
+          "detail": {
+            "type": "string",
+            "nullable": true
+          },
+          "instance": {
+            "type": "string",
+            "nullable": true
+          }
+        },
+        "additionalProperties": { }
+      }
+    }
+  }
+}

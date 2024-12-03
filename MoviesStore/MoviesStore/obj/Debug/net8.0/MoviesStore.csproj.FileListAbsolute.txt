@@ -86,3 +86,7 @@ C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\MoviesStore.pdb
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\MoviesStore.genruntimeconfig.cache
 C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\ref\MoviesStore.dll
+C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\bin\Debug\net8.0\MoviesStore.staticwebassets.endpoints.json
+C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\staticwebassets.build.endpoints.json
+C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\staticwebassets\msbuild.MoviesStore.Microsoft.AspNetCore.StaticWebAssetEndpoints.props
+C:\Users\carlo\source\repos\CRUD_Movies_Store\MoviesStore\MoviesStore\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt

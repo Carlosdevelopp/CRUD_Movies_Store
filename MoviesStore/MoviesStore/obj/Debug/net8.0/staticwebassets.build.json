@@ -1,11 +1,12 @@
 {
   "Version": 1,
-  "Hash": "Jl3+ryhDY6LxOLGqQIdrnXTgW6sErSg+Ze19UGk/A98=",
+  "Hash": "WilNnoZgOe+2VHSisN1pjQnz+7S1hgLp0+CAxgKxHfI=",
   "Source": "MoviesStore",
   "BasePath": "_content/MoviesStore",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],
   "DiscoveryPatterns": [],
-  "Assets": []
+  "Assets": [],
+  "Endpoints": []
 }

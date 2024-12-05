@@ -172,12 +172,14 @@
         "tags": [
           "Movies"
         ],
+        "summary": "Get a list of genre.",
+        "description": "Ejemplo de solicitud:\r\n\r\n    GET /api/Movies/GetGenres\r\n    {\r\n        \"GenreMovie\": \"string\"\r\n    }",
         "responses": {
           "201": {
-            "description": "Created"
+            "description": "Operation Successful."
           },
           "400": {
-            "description": "Bad Request",
+            "description": "Client error.",
             "content": {
               "application/json": {
                 "schema": {

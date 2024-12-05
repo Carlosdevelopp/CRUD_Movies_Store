@@ -107,6 +107,22 @@
             <response code="201">Operation Successful.</response>
             <response code="400">Client error.</response>
         </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.GetGenres">
+            <summary>
+            Get a list of genre.
+            </summary>
+            <returns>A list objects of genres.</returns>
+            <remarks>
+                Ejemplo de solicitud:
+                
+                    GET /api/Movies/GetGenres
+                    {
+                        "GenreMovie": "string"
+                    }
+            </remarks>
+            <response code="201">Operation Successful.</response>
+            <response code="400">Client error.</response>
+        </member>
         <member name="M:MoviesStore.Controllers.MoviesController.InsertMovie(Infrastructure.DTO.MoviesInsertDTO)">
              <summary>
              Insert a movie into the database.

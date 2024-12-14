@@ -30,6 +30,29 @@
   },
   {
     "ContainingType": "MoviesStore.Controllers.MoviesController",
+    "Method": "GetActors",
+    "RelativePath": "api/Movies/GetActors",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": [
+      {
+        "Type": "System.Void",
+        "MediaTypes": [],
+        "StatusCode": 201
+      },
+      {
+        "Type": "Microsoft.AspNetCore.Mvc.ProblemDetails",
+        "MediaTypes": [
+          "application/json"
+        ],
+        "StatusCode": 400
+      }
+    ]
+  },
+  {
+    "ContainingType": "MoviesStore.Controllers.MoviesController",
     "Method": "GetAward",
     "RelativePath": "api/Movies/GetAward",
     "HttpMethod": "GET",

@@ -109,7 +109,7 @@
         </member>
         <member name="M:MoviesStore.Controllers.MoviesController.GetGenres">
             <summary>
-            Get a list of genre.
+            Get a list all genres.
             </summary>
             <returns>A list objects of genres.</returns>
             <remarks>
@@ -117,7 +117,7 @@
                 
                     GET /api/Movies/GetGenres
                     {
-                        "GenreMovie": "string"
+                        "genreMovie": "string"
                     }
             </remarks>
             <response code="201">Operation Successful.</response>

@@ -172,14 +172,36 @@
         "tags": [
           "Movies"
         ],
-        "summary": "Get a list of genre.",
-        "description": "Ejemplo de solicitud:\r\n\r\n    GET /api/Movies/GetGenres\r\n    {\r\n        \"GenreMovie\": \"string\"\r\n    }",
+        "summary": "Get a list all genres.",
+        "description": "Ejemplo de solicitud:\r\n\r\n    GET /api/Movies/GetGenres\r\n    {\r\n        \"genreMovie\": \"string\"\r\n    }",
         "responses": {
           "201": {
             "description": "Operation Successful."
           },
           "400": {
             "description": "Client error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/Movies/GetActors": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "responses": {
+          "201": {
+            "description": "Created"
+          },
+          "400": {
+            "description": "Bad Request",
             "content": {
               "application/json": {
                 "schema": {

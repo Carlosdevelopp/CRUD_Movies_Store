@@ -123,6 +123,22 @@
             <response code="201">Operation Successful.</response>
             <response code="400">Client error.</response>
         </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.GetGenre(System.Int32)">
+            <summary>
+            Get a genre by its ID.
+            </summary>
+            <returns>ID of Genres.</returns>
+            <remarks>
+                Ejemplo de solicitud:
+                
+                    GET /api/Movies/GetGenre
+                    {
+                        "genreMovie": "string"
+                    }
+            </remarks>
+            <response code="201">Operation Successful.</response>
+            <response code="400">Client error.</response>
+        </member>
         <member name="M:MoviesStore.Controllers.MoviesController.GetActors">
             <summary>
             Get a list all actors.
@@ -133,7 +149,7 @@
                 
                     GET /api/Movies/GetActors
                     {
-                        "fulllNameMovie": "string"
+                        "fulllNameActor": "string"
                     }
             </remarks>
             <response code="201">Operation Successful.</response>

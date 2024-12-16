@@ -191,13 +191,47 @@
         }
       }
     },
+    "/api/Movies/GetGenre": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Get a genre by its ID.",
+        "description": "Ejemplo de solicitud:\r\n\r\n    GET /api/Movies/GetGenre\r\n    {\r\n        \"genreMovie\": \"string\"\r\n    }",
+        "parameters": [
+          {
+            "name": "genreId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operation Successful."
+          },
+          "400": {
+            "description": "Client error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Movies/GetActors": {
       "get": {
         "tags": [
           "Movies"
         ],
         "summary": "Get a list all actors.",
-        "description": "Ejemplo de solicitud:\r\n\r\n    GET /api/Movies/GetActors\r\n    {\r\n        \"fulllNameMovie\": \"string\"\r\n    }",
+        "description": "Ejemplo de solicitud:\r\n\r\n    GET /api/Movies/GetActors\r\n    {\r\n        \"fulllNameActor\": \"string\"\r\n    }",
         "responses": {
           "201": {
             "description": "Operation Successful."

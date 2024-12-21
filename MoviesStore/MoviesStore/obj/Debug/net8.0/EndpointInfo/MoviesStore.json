@@ -249,6 +249,40 @@
         }
       }
     },
+    "/api/Movies/GetActor": {
+      "get": {
+        "tags": [
+          "Movies"
+        ],
+        "summary": "Get a actor by its ID.",
+        "description": "Ejemplo de solicitud:\r\n\r\n    GET /api/Movies/GetActor\r\n    {\r\n        \"fulllNameActor\": \"string\"\r\n    }",
+        "parameters": [
+          {
+            "name": "actorId",
+            "in": "query",
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "201": {
+            "description": "Operation Successful."
+          },
+          "400": {
+            "description": "Client error.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/ProblemDetails"
+                }
+              }
+            }
+          }
+        }
+      }
+    },
     "/api/Movies/InsertMovie": {
       "post": {
         "tags": [

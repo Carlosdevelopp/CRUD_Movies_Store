@@ -155,6 +155,22 @@
             <response code="201">Operation Successful.</response>
             <response code="400">Client error.</response>
         </member>
+        <member name="M:MoviesStore.Controllers.MoviesController.GetActor(System.Int32)">
+            <summary>
+            Get a actor by its ID.
+            </summary>
+            <returns>A list objects of actor.</returns>
+            <remarks>
+                Ejemplo de solicitud:
+                
+                    GET /api/Movies/GetActor
+                    {
+                        "fulllNameActor": "string"
+                    }
+            </remarks>
+            <response code="201">Operation Successful.</response>
+            <response code="400">Client error.</response>
+        </member>
         <member name="M:MoviesStore.Controllers.MoviesController.InsertMovie(Infrastructure.DTO.MoviesInsertDTO)">
              <summary>
              Insert a movie into the database.
